@@ -51,7 +51,8 @@ most browsers have whitespace except for IE, treat whitespace between elements a
 best way is to not use DOM or use the JavaScript library such as jQuery
 
 
-
+6. let elList
+var pineNuts = document.getElementsByTagName("li")[0].nextSibling.textContent; console.log(pineNuts);
 
 
 
