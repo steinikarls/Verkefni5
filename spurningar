@@ -1,0 +1,63 @@
+1. getElementById();
+is the quickest and most efficient way to access an element because no two elements can share the same value for their id attribute.
+
+
+2. querySelectAll();
+uses CSS selector syntax to select one or more elements and returns all of those that match.
+
+<h1 id="header">list king</h1>
+<h2>buy groceries</h2>
+<ul>
+<li id="one" class="hot">fresh</li>
+<li id="two" class="hot">pine nuts</li>
+<li id="three" class="hot">honey</li>
+<li id="four">balsamic vinegar</li>
+</ul>
+
+var elements = document.querySelectorAll('li.hot');
+if (elements.lenght > 0)
+{
+	var el = elements[0];
+}
+
+
+3. notelist
+A NoteList is a collection of elemnt nodes. Each node is given an index (a numbe that starts at zero, just like an array).
+The order i which the element nodes are stored in a NodeList is the same order that they appeared in the HTML page.
+And NoteList is a type of object called a Collection .
+
+var elements = documents.getElementByTagName('li');  // find <li> elements
+if (elements.lenght > 0) // if 1 or more are found 
+{
+	var el = elements[0]; // select the first one using array syntax
+	el.className = 'cool'; // change the value of the class attribute
+}
+
+
+4. getElementByTagName();
+method that allows you to select elements using there tag name.
+
+var elements = documents.getElementByTagName('li');
+if (elements.lenght > 0)
+{
+	var el = elements[0];
+}
+
+
+5. whitespace 
+it's kinda like a blank object between text node. 
+most browsers have whitespace except for IE, treat whitespace between elements as a text node.
+
+best way is to not use DOM or use the JavaScript library such as jQuery
+
+
+
+
+
+
+
+
+
+
+
+
